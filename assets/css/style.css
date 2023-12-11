@@ -152,7 +152,7 @@ img{
     margin-right: auto;
     background: #ffffff;
     border-radius: .5rem;
-    box-shadow: 0 0 2px 0 rgb(1, 1, 79);
+    /* box-shadow: 0 0 2px 0 rgb(1, 1, 79); */
 }
 .body_main .header_logo{
     /* background: #ebf7fb; */
