@@ -154,6 +154,9 @@ img{
     border-radius: .5rem;
     /* box-shadow: 0 0 2px 0 rgb(1, 1, 79); */
 }
+.header_logo.login_logo{
+    box-shadow: 0 0 2px 0 rgb(1, 1, 79);
+}
 .body_main .header_logo{
     /* background: #ebf7fb; */
     width: 100%;
