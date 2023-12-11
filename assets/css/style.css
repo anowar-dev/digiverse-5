@@ -205,9 +205,10 @@ img{
 }
 .slider_box .slider_text{
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 400;
     color: #ffffff;
     line-height: 120%;
+    margin-top: .6rem;
 }
 .body_main .btns{
     width: 100%;
