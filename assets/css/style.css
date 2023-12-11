@@ -330,7 +330,7 @@ img{
     font-size: 1.8rem;
     font-weight: 800;
     line-height: 2.5rem;
-    color: #2b3d66;
+    color: rgb(1, 1, 79);
     margin-bottom: 2rem;
     text-transform: uppercase;
 }
@@ -341,13 +341,13 @@ img{
     align-items: center;
     column-gap: .5rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid #2b3d66;
+    border-bottom: 1px solid rgb(1, 1, 79);
     padding-bottom: 1px;
 }
 .login_inner form .form_inner_div i{
     display: block;
     font-size: .8rem;
-    color: #2b3d66;
+    color: rgb(1, 1, 79);
 }
 .login_inner form .form_inner_div input::placeholder{
     font-size: .8rem;
