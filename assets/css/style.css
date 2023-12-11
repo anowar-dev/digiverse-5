@@ -168,6 +168,7 @@ img{
     top: 0;
     left: 0;
     text-align: center;
+    padding: 0.3rem 0;
 }
 .body_main .header_logo .home_page_logo img{
     max-width: 15rem;
@@ -246,8 +247,8 @@ img{
 }
 .social .social_inner a i{
     font-size: .9rem;
-    color: rgb(1, 1, 79);
-    background: #273c75;
+    color: #000000;
+    background: #8a99bb;
     width: 1.8rem;
     height: 1.8rem;
     line-height: 1.8rem;
@@ -290,6 +291,7 @@ img{
     left: 0;
     background: #ebf7fb;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2);
+    padding: 0.3rem 0;
 }
 .login_main{
     width: 100%;
@@ -395,6 +397,25 @@ img{
 .login_main.signup{
     flex-direction: row-reverse;
 }
+.auth_btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+.auth_btns .remember{
+    margin-top: 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2b3d66;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.auth_btns .remember:hover{
+    color: #000000;
+}
 
 /*============= Footer section ===========*/
 .footer{
@@ -405,31 +426,42 @@ img{
     padding: 2rem 0;
     display: flex;
     justify-content: space-between;
-    align-items: center !important;
+    align-items: center;
     column-gap: 2%;
 }
 .footer_main .copyrights{
-    width: 32%;
     text-align: left;
+    width: 31%;
 }
 .footer_main .copyrights p{
     font-size: .9rem;
-    color: #707da0;
+    color: #8a99bb;
     font-weight: 400;
     margin-bottom: 0 !important;
 }
+.footer_main .copyrights p a{
+    font-size: .9rem;
+    color: #c7ccd9;
+    font-weight: 500;
+    margin-bottom: 0 !important;
+    text-decoration: none;
+    transition: .3s;
+}
+.footer_main .copyrights p a:hover{
+    color: #8a99bb;
+}
 .footer_main .login_social{
-    width: 32%;
     text-align: right;
+    width: 26%;
 }
 .footer_main .login_privacy{
-    width: 32%;
     text-align: center;
+    width: 41%;
 }
 .footer_main .login_privacy a{
     font-size: .9rem;
     font-weight: 400;
-    color: #516186;
+    color: #8a99bb;
     text-decoration: none;
     padding: 0 1rem;
     border-right: 1px solid #4b5a7c;
@@ -437,7 +469,7 @@ img{
     transition: .3s;
 }
 .footer_main .login_privacy a:hover{
-    color: #9595c7;
+    color: #c9c9dd;
 }
 .footer_main .login_privacy a:last-child{
     border: unset;
@@ -484,7 +516,7 @@ img{
     margin-bottom: 0;
     font-size: 1rem;
     font-weight: 500;
-    color: rgba(0, 0, 0, .7);
+    color: rgba(0, 0, 0, .8);
 }
 /*========= Login end ============*/
 
@@ -597,7 +629,36 @@ img{
         text-align: center;
         margin-bottom: 3rem;
     }
-    
+    .body_main .header_logo{
+        width: 100% !important;
+        text-align: center;
+    }
+    .body_main .header_logo .home_page_logo img{
+        width: 14rem !important;
+    }
+
+}
+
+/*----------- Max-width 810px ------------*/
+@media (max-width: 810px) {
+    .footer_main{
+        flex-direction: column-reverse;
+        row-gap: 1.5rem;
+    }
+    .footer_main .login_social{
+        text-align: center !important;
+        width: 100% !important;
+    }
+    .footer_main .login_privacy{
+        width: 100% !important;
+    }
+    .footer_main .copyrights{
+        text-align: center !important;
+        width: 100% !important;
+    }
+    .footer_main.home_page_footer{
+        padding: 1rem !important;
+    }
 }
 
 /*----------- max-width: 768px -------------*/
@@ -632,6 +693,9 @@ img{
     .login_main{
         padding: 3.5rem !important;
         margin-top: 3.5rem !important;
+    }
+    .body_main .header_logo .home_page_logo img{
+        width: 13rem !important;
     }
 }
 
@@ -703,6 +767,9 @@ img{
     .footer_main{
         padding: 1rem 0 2rem 0;
     }
+    .body_main .header_logo{
+        width: 100% !important;
+    }
 }
 
 /*----------- max-width: 420px -------------*/
@@ -719,11 +786,6 @@ img{
     .body_main .terms{
         left: 40% !important;
         transform: translate(-40%) !important;
-    }
-    .social .social_inner a i{
-        width: 1.6rem !important;
-        height: 1.6rem !important;
-        line-height: 1.6rem !important;
     }
     .body_main .social {
         right: 1rem !important;
@@ -742,7 +804,7 @@ img{
         bottom: 30% !important;
     }
     .body_main .header_logo{
-        width: 10rem !important;
+        width: 100% !important;
     }
 }
 
@@ -759,7 +821,13 @@ img{
     .body_main .btns a{
         font-size: .9rem !important;
     }
+    .auth_btns{
+        flex-direction: column;
+        row-gap: .8rem;
+        text-align: center;
+    }
 }
+
 
 
 /* This is Height Controling */
@@ -773,8 +841,4 @@ img{
         bottom: 25% !important;
     }
 }
-/* @media (min-height: 850px) {
-    .login{
-        height: 100vh;
-    }
-} */
+
