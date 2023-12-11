@@ -229,7 +229,10 @@ img{
     transition: all .3s;
 }
 .body_main .btns a:hover{
-    background: #4875fb;
+    /* background: #4875fb; */
+    background: rgb(1, 1, 79);
+    color: #ffffff;
+    border: 1px solid #ffffff;
 }
 
 .body_main .terms a:last-child{
@@ -438,6 +441,7 @@ img{
     color: #8a99bb;
     font-weight: 400;
     margin-bottom: 0 !important;
+    text-transform: uppercase;
 }
 .footer_main .copyrights p a{
     font-size: .9rem;
@@ -540,6 +544,7 @@ img{
     border-bottom: 2px solid #2b3d66;
     color: #2b3d66;
     text-align: center;
+    text-transform: uppercase;
 }
 .privacy_top .privacy_data_bold{
     font-size: 1.1rem;
